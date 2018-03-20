@@ -10,4 +10,4 @@ Nous prévoyons le codage d'un premier modèle simple simulant une simple file d
 
 ## Notebooks
 
-- [gjkjgjgv](poisson 2.ipynb) khghk
+- [gjkjgjgv](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/master/poisson%202.ipynb) khghk
