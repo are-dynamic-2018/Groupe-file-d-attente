@@ -14,7 +14,7 @@ Nous prévoyons le codage d'un premier modèle simple simulant une simple file d
 
 4e bilan : Aujourd'hui nous décidons de partir de la fonction de poisson pour créer une [fonction](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/05c0a5b87b46fe9e94e946501ad57a30839027f7/poisson%202.ipynb) avec des temps d'arrivée et des temps de départ qui ne dépendent pas des temps précédents. L'objectif pour la semaine prochaine sera de corriger les problèmes de cette fonction qui ne fonctionne pas correctement pour le moment.
 
-5e bilan : Nous avons réussi à corriger les problèmes de la fonction précédente, qui nous retourne désormais les résultats attendus, nous en avons profiter pour ajouter [une représentation graphique](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/f26a8153fafdfd22fb2f1c13c1112924536d58cf/poisson%202.ipynb).  
+5e bilan : Nous avons réussi à corriger les problèmes de la fonction précédente, qui nous retourne désormais les résultats attendus, nous en avons profiter pour ajouter [une représentation graphique](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/f26a8153fafdfd22fb2f1c13c1112924536d58cf/poisson%202.ipynb). L'objectif de la prochaine séance sera de coder une fonction dans un cas différent, avec une seule file et plusieurs caisses.
 
 6e bilan : Nous avons coder une [fonction](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/cf8d6f4ecac15e335f024755532455e5702ba529/File%20unique%20.ipynb) s'inspirant de la précedente, à la différence que cette dernière a une seule file d'attente pour plusieurs caisses. Nous avons également modifié l'ancienne [fonction](https://github.com/are-dynamic-2018/Groupe-file-d-attente/blob/16864f75467c415df314d366f18db397dd412a7a/DATA.ipynb).
 
