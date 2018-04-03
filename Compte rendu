@@ -1,0 +1,13 @@
+Comtpe Rendu
+
+Pour cet Atelier de Recherche Encadré nous avons choisi d'étudier le modèle des files d'attentes. 
+Les files d'attentes sont, comme beaucoup d'événements periodiques, analysables et modélisables.
+
+Historiquement, l’étude et la modélisation de l’évolution des files d'attentes existe et est aussi riche et foisonnante qu'elle peut l'être dans d'autres modèles d'étude. Elle a été initiée en 1917 par Agner Krarup Erlang qui s'interessa au gestion des flux téléphoniques et à la  théorie des files d'attentes. L'étude des files d'attentes s'appuie sur les statistiques. Il existe après cela deux manières d'aborder la théorie, par la méthode periodique, avec la loi de Little, et la loi exponnentielle avec la loi de Poisson.
+
+Il existe beaucoup de type de file d'attente, qui va de la file classique, i.e à file séparée, une file pour chaque caisse à la caisse à file unique que nous voyons se développer en France et qui nous vient de la culture anglo-saxonne, en passant par la file virtuelle que l'on connait à l'hôpital avec la prise de ticket à notre arrivée et qui permet de ne pas faire la queue physiquement.
+
+Ce dernier cas ne sera pas discuté, comme d'autres, puisqu'ils ne sont que des variantes des modèles primaires que nous avons étudié, les paramètres de ces files restants les mêmes.
+
+Nous commencerons donc par décrire le modèle des files d'attentes séparées que nous analyserons. Nous étudierons ensuite le modèle à file unique menant à plusieurs caisses. Enfin, nous allons allons discuter des résultats obtenus pour savoir, par exemple lequel de ces modèles est le meilleur, le plus utile à partir de quel fréquence d'arrivée ecaetera.
+
