@@ -3,16 +3,69 @@ Comtpe Rendu
 Pour cet Atelier de Recherche Encadré nous avons choisi d'étudier le modèle des files d'attentes. 
 Les files d'attentes sont, comme beaucoup d'événements periodiques, analysables et modélisables.
 
-Historiquement, l’étude et la modélisation de l’évolution des files d'attentes existe et est aussi riche et foisonnante qu'elle peut l'être dans d'autres modèles d'étude. 
-Elle a été initiée en 1917 par Agner Krarup Erlang qui s'interessa au gestion des flux téléphoniques et à la  théorie des files d'attentes. 
-L'étude des files d'attentes s'appuie sur les statistiques. Il existe après cela deux manières d'aborder la théorie, par la méthode periodique, avec la loi de Little, et la loi exponnentielle avec la loi de Poisson.
 
-Il existe beaucoup de type de file d'attente, qui va de la file classique, i.e à file séparée, une file pour chaque caisse à la caisse à file unique que nous voyons se développer en France et qui nous vient de la culture anglo-saxonne, en passant par la file virtuelle que l'on connait à l'hôpital avec la prise de ticket à notre arrivée et qui permet de ne pas faire la queue physiquement.
-
-Ce dernier cas ne sera pas discuté, comme d'autres, puisqu'ils ne sont que des variantes des modèles primaires que nous avons étudié, les paramètres de ces files restants les mêmes.
 
 Nous commencerons donc par décrire le modèle des files d'attentes séparées que nous analyserons. Nous étudierons ensuite le modèle à file unique menant à plusieurs caisses. Enfin, nous allons allons discuter des résultats obtenus pour savoir, par exemple lequel de ces modèles est le meilleur, le plus utile à partir de quel fréquence d'arrivée ecaetera.
 
 
 I- Cas des files d'attentes séparées
 
+Pour le cas des files
+
+<>1 idée 1 réponse par slide<>
+
+<>Cas général<> : Grosse pb / net
+
+Historiquement, l’étude et la modélisation de l’évolution des files d'attentes existe et est aussi riche et foisonnante qu'elle peut l'être dans d'autres modèles d'étude. 
+Elle a été initiée en 1917 par Agner Krarup Erlang qui s'interessa au gestion des flux téléphoniques et à la  théorie des files d'attentes. 
+Nous voulons savoir quel est le meilleur type de file d'attente en fonction de la demande.
+Sachant qu'en moyenne il y a 10 minutes d'attente en caisse dans un hypermarché en France, 200 000 caisses dans le commerce alimentaire en France, dont 10 000 sont des caisses automatiques Sources : enseignes, prestataire (source : https://www.lsa-conso.fr/comment-les-enseignes-reduisent-l-attente-en-caisses,148128)
+
+<>phénomène étudié<> : Les files d'attentes dans les magasins/ petites qs (para)
+
+Il existe beaucoup de type de file d'attente, qui va de la file classique, i.e à file séparée, une file pour chaque caisse à la caisse à file unique que nous voyons se développer en France et qui nous vient de la culture anglo-saxonne, en passant par la file virtuelle que l'on connait à l'hôpital avec la prise de ticket à notre arrivée et qui permet de ne pas faire la queue physiquement.
+
+Ce dernier cas ne sera pas discuté, comme d'autres, puisqu'ils ne sont que des variantes des modèles primaires que nous avons étudié, les paramètres de ces files restants les mêmes.
+
+On prendra l'exemple des
+
+v
+<>Problématique<> : Passage du phéno au scientifique / pb précise / net
+
+Jusqu'ici nous avons défini de manière globale et générale le thème que nous voulions étudier. Mais pour l'étudier il nous faudra préciser chaque paramètre et chaque variable qui représentera un phénomène physique.
+
+L'étude des files d'attentes s'appuie sur les statistiques. 
+Il existe après cela deux manières d'aborder la théorie, par la méthode périodique, avec la loi de Little, et la loi exponnentielle avec la loi de Poisson.
+
+En ce qui concerne les paramètres que nous allons prendre en compte pour étudier les files d'attentes il s'agira :
+ >Pour la loi poisson :<
+Précisons tout de même que la loi de Poisson s'appuie sur la distribution et des loi de probabilité discrète, c'est-à-dire que la loi est faite pour étudier un phénomène dépendant du hasard. On comprend pourquoi cette loi est plus puissante que d'utiliser une arrivée periodique, pratiquement très peu probable. Nous allons cependant étudier les deux pour savoir ce qui diffère de l'une et de l'autre et essayer d'en tirer des conclusions.
+
+- Temps : le temps que durera la simulation.
+- Lambda d'arrivée : La fréquence d'arrivée des clients dans la file.
+- Lambda de départ : La fréquence de départ des clients, le temps qu'ils ont passé dans la file et à la caisse.
+- Nombre de service : Dans notre cas, les services représenteront des caisse.
+- Nombre de client : Le nombre de client dans la file au début de la simulation.
+
+>Pour la loi de Little :<
+La loi de Little est définie comme : "Le nombre de clients dans un système stable est égal à leur fréquence moyenne d'arrivée 'lambda'  multipliée par leur temps moyen 'tau' passé dans le système" (https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_files_d%27attente)
+
+Elle prend donc en paramètre : 
+- Temps : le temps que durera la simulation.
+- Lambda : La fréquence moyenne d'arrivée des clients dans la file.
+- 1/mue : Le temps moyen de service.
+- Nombre de service : Dans notre cas, les services représenteront des caisse.
+- Nombre de client : Le nombre de client dans la file au début de la simulation.
+
+Nous venons décrire précisement chaque paramètre qui va nous être utile dans la modélisaiton. Nous allons tenter de savoir, comment évolue les files d'attentes en fonction du temps d'arrivée des clients et de la rapidité du service, lequel de ces deux modèle est le plus représentatif de la réalité.
+
+v
+théorie : modélisation / net
+
+
+
+v
+pratique : Ce que nous avons fait / implémentation
+|
+v
+Discussion : Boucler si necessaire     
